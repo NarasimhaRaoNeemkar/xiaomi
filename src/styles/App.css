@@ -1,0 +1,22 @@
+.appContainer {
+    display: flex;
+}
+
+.sideMenuBar {
+    width: 15%;
+}
+
+.bodyContainer {
+    position: absolute;
+    width: 85%;
+    padding: 5px;
+    left: 15%;
+}
+
+.mainContainer {
+    margin: 10px;
+    padding: 10px;
+    font-family: cursive;
+    font-size: small;
+    height: auto;
+}

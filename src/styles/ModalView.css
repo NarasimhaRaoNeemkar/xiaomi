@@ -1,0 +1,36 @@
+.submitButton {
+    background-color: rgb(36, 54, 65);
+    color: floralwhite;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: small;
+}
+
+.backDropStyle {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.71);
+    z-index: 9999;
+}
+
+.modalStyle {
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 25%;
+    z-index: 9;
+    height: auto;
+    color: #3c763d;
+    padding: 10px;
+}
+
+.footer {
+    padding: 20px;
+}

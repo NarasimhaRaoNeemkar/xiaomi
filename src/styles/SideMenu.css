@@ -1,0 +1,31 @@
+.menuHeader {
+    color: floralwhite;
+    font-size: medium;
+}
+
+.menuItems {
+    margin: auto;
+    padding: 15px;
+    width: 15%;
+    background-color: rgb(36, 54, 65);
+    color: whitesmoke;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.menuItems a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.menuItems a:hover:not(.active) {
+    background-color: #111920;
+    color: white;
+}
+
+.activeMenuItem a {
+    background:  #067ca0;
+}
