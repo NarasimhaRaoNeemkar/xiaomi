@@ -8,12 +8,8 @@ const menuItems = [
         text: "Login Form"
     },
     {
-        path: '/usersProfile',
-        text: "Users"
-    },
-    {
-        path: '/shoppingCart',
-        text: "Shopping Cart"
+        path: '/ecommerce',
+        text: "Ecommerce"
     },
     {
         path: '/news',

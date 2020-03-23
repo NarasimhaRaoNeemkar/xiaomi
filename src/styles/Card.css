@@ -1,0 +1,36 @@
+.card {
+    margin: 2px;
+    width: 140px;
+    height: 250px;
+}
+
+.cardContainer {
+    display: inline-flex;
+    flex-flow: row wrap;
+    text-align: left;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.0, 1.0);
+    box-shadow: 0 4px 4px 0 grey, 0 4px 4px 0 grey, 0 4px 4px 0 grey;
+}
+
+.cardButton {
+    width: 100%;
+    background-color: rgb(36, 54, 65);
+    color: floralwhite;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.cardButton:hover {
+    transform: scale(1.0, 1.0);
+    box-shadow: 0 4px 4px 0 grey, 0 4px 4px 0 grey, 0 4px 4px 0 grey, 0 4px 4px 0 grey;
+}
+
+.imageComponent {
+    padding: 5px;
+    width: 140px;
+    height: 140px;
+}

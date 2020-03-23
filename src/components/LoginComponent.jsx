@@ -7,7 +7,8 @@ export default class LoginComponent extends React.Component {
         super(props);
         this.state = {
             isValid: "",
-            displayModal: false
+            displayModal: false,
+            userId: ""
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,7 +18,7 @@ export default class LoginComponent extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         if (document.getElementById("loginId").value && document.getElementById("pwd").value) {
-            this.setState({ isValid: true, displayModal: true });
+            this.setState({ isValid: true, displayModal: true, userId: document.getElementById("loginId").value });
         }
         else {
             this.setState({ isValid: false })
@@ -27,7 +28,7 @@ export default class LoginComponent extends React.Component {
     handleCallback(e) {
         e.preventDefault();
         this.setState({ displayModal: false });
-        this.props.history.push("/")
+        this.props.history.push(`/userProfile`, this.state.userId);
     }
 
     displayLoginForm() {
@@ -45,7 +46,6 @@ export default class LoginComponent extends React.Component {
     }
 
     render() {
-        console.log("props-->", this.props);
         return (
             <div>
                 {this.state.isValid === false && <div className="alert alert-danger prompt">Invalid Credentials</div>}
