@@ -1,7 +1,8 @@
 import React from 'react';
 import { getProducts } from '../utils/storeUtils';
-import CardComponent from './CardComponent.jsx';
+import CardComponentContainer from './CardComponentContainer.jsx';
 import SearchComponent from './SearchComponent.jsx';
+import CartComponentContainer from './CartComponentContainer.jsx';
 
 export default class Ecommerce extends React.Component {
     constructor(props) {
@@ -20,7 +21,7 @@ export default class Ecommerce extends React.Component {
                 product => this.state.searchLetter === "" || product.name.toLowerCase().includes(this.state.searchLetter.toLowerCase())
             )
             .map(product => (
-                <CardComponent
+                <CardComponentContainer
                     key={product.name}
                     product={product}
                 />
@@ -40,9 +41,9 @@ export default class Ecommerce extends React.Component {
                     <div id="store" className="col-sm-8 cardContainer">
                         {this.getProducts()}
                     </div>
-                    {/* <div id="store" className="col-sm-8 cardContainer">
-                        {this.getProducts()}
-                    </div> */}
+                    <div id="store" className="col-sm-4">
+                        <CartComponentContainer />
+                    </div>
                 </div>
             </div>
             );

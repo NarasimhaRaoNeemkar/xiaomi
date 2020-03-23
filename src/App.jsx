@@ -21,7 +21,7 @@ export default class App extends React.Component {
                                 <Route path="/loginComponent" component={LoginComponent} />
                                 <Route path="/userProfile" component={Profile} />
                                 <Route path="/ecommerce" component={Ecommerce} />
-                                <Route path="/news" component={(<div>News</div>)} />
+                                <Route path="/news" component={News} />
                                 <Route path="/" component={Ecommerce} />
                             </Switch>
                         </div>
