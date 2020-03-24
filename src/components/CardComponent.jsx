@@ -7,7 +7,6 @@ export default class CardComponent extends React.Component {
     }
 
     render() {
-        console.log("props-->", this.props);
         let { name, description, image, price } = this.props.product;
         return (
             <div className="card">
